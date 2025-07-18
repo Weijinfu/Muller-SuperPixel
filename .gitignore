@@ -1,0 +1,6 @@
+.*
+!.gitignore
+ckpt/
+data/
+output/
+reference/

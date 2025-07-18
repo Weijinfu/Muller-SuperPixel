@@ -1,0 +1,16 @@
+#### 超像素 ###
+n_clusters: 1024         # 聚类的数量
+batch_size: 1000
+random_state: 42
+data_dir: data/贴壁细胞样本         # 多个混合的缪勒矩阵图像和mask图的路径
+checkpoint_dir: ./ckpt   # 模型的保存路径
+feature_type: pbp        # 特征类型，pbp或muller
+
+#### 偏振特征模板 ####
+pft_dir: data/贴壁细胞样本/HeLa/ROI1     # 单个类别的缪勒矩阵图像和mask图的路径
+
+#### 预测 ####
+pred_dir: data/贴壁细胞样本/HeLa/          # 单个类别的缪勒矩阵图像和mask图的路径
+k_std: 1.0          # 计算标准差倍数，决定了距离质心k_std之内的像素点会被认为与特征模板细胞相似
+output_dir: ./output  # 保存识别的细胞像素点
+
