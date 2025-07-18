@@ -34,7 +34,7 @@
     ```
     python mask_gui.py 
     ```
-2. 像素预测 (配置信息见 [Config](#config-configxml) )
+2. 像素预测 (配置信息见 [Config](#config-configyaml) )
     ```
     sh main.sh
     ```
@@ -47,7 +47,8 @@ students_submission.py
     2. feature_list 用于自定义修改程序使用的偏振特征。
     3. get_pft() 用于修改计算pft方法。
 
-### Config (config.xml)
+### Config (config.yaml) 
+config.yaml中的参数说明
 | 参数名           | 类型    | 默认值/示例                        | 说明                                                         |
 |------------------|---------|------------------------------------|--------------------------------------------------------------|
 | n_clusters       | int     | 1024                               | 超像素聚类的类别数                                           |
